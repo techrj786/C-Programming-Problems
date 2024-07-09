@@ -1,11 +1,17 @@
-# Get a number from the user
-user_input = input("Enter a number: ")
+#include <stdio.h>
 
-# Convert the input to an integer
-number = int(user_input)
+int main() {
+    int number;
 
-# Add 2 to the number
-result = number + 2
+    // Get a number from the user
+    printf("Enter a number: ");
+    scanf("%d", &number);
 
-# Print the result
-print("The result is:", result)
+    // Add 2 to the number
+    int result = number + 2;
+
+    // Print the result
+    printf("The result is: %d\n", result);
+
+    return 0;
+}
